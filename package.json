@@ -1,0 +1,25 @@
+{
+  "name": "cubicle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitanovtd/js-back-end-cars.git"
+  },
+  "keywords": [],
+  "author": "TV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vitanovtd/js-back-end-cars/issues"
+  },
+  "homepage": "https://github.com/vitanovtd/js-back-end-cars#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "nodemon": "^2.0.16"
+  }
+}
