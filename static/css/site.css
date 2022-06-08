@@ -72,9 +72,13 @@ div.cube {
   display: inline-block;
   border: 1px solid #2b415433;
   background: white;
-
   vertical-align: top;
 }
+
+.description{
+  display: none;
+}
+
 
 div.cube:hover p.name {
   background: #607588;
