@@ -4,5 +4,29 @@
     "description": "202 000 km. Newly imported.",
     "imageUrl": "Subaru-Legacy-IV-Station-Wagon-facelift-2006.jpg",
     "price": 3000
+  },
+  "53897a74-8134": {
+    "name": "",
+    "description": "",
+    "imageUrl": "",
+    "price": 0
+  },
+  "18b77a5c-ad84": {
+    "name": "Alfa-Romeo",
+    "description": "Brand new",
+    "imageUrl": "Alfa-Romeo.jpg",
+    "price": 48000
+  },
+  "b8504bd6-5722": {
+    "name": "SUBARU LEGACY 2.0I",
+    "description": "Newly imported",
+    "imageUrl": "Subaru-Legacy-IV-Station-Wagon-facelift-2006.jpg",
+    "price": 8000
+  },
+  "03e2d68f-4248": {
+    "name": "VW Beetle",
+    "description": "Vintage",
+    "imageUrl": "VW Beetle.jpg",
+    "price": 50000
   }
 }

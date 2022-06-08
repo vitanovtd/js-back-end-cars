@@ -4,7 +4,17 @@
 // bind routing
 // create layout
 // create data service
+// - read all
+// - read one by id
+// - create
+// - edit
+// - delete
+// - search
 // implement controllers
+// - home 
+// - about
+// - details
+// - create
 
 const express = require('express');
 const hbs = require('express-handlebars');
@@ -37,8 +47,9 @@ app.use(carsService());
 
 app.get('/', home);
 app.get('/about', about);
-app.get('/create', create.get);
-app.get('/create', create.post);
+
+
+app.route('/create').get(create.get).post(create.post);
 app.get('/details/:id', details);
 
 app.all('*', notFound);
