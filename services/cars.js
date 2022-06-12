@@ -1,4 +1,5 @@
 const fs = require('fs/promises');
+const deleteController = require('../controllers/deleteController');
 
 const filePath = './services/data.json';
 
@@ -76,11 +77,41 @@ function nextId() {
 
 
 
+async function deleteById(id) {
+  const data = await read();
+  const car = data[id];
+
+  if (data.hasOwnProperty) {
+    delete data[id];
+    await write(data);
+  } else {
+    throw new Error('No such ID in database');
+  }
+}
+
+async function updateById(id, car) {
+  const data = await read();
+
+
+  if (data.hasOwnProperty) {
+    data[id] = car;
+    await write(data);
+  } else {
+    throw new Error('No such ID in database');
+  }
+}
+
+
+
 module.exports = () => (req, res, next) => {
   req.storage = {
     getAll,
     getById,
-    createCar
+    createCar,
+    deleteById,
+    updateById
   };
   next();
 };
+
+
